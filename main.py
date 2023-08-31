@@ -20,6 +20,6 @@ def main(model,cv):
 
 
 
-model_load = jb.load('F:\ML\Learning\Spam_model.pkl')
-cv = jb.load('F:\ML\Learning\C_vector.pkl')
+model_load = jb.load('Spam_model.pkl')
+cv = jb.load('C_vector.pkl')
 main(model_load,cv)
