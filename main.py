@@ -4,20 +4,29 @@ def main(model,cv):
     st.title('Spam Filter'.upper())
     st.markdown("<h1 style = 'text-align : center; font-size: 25px; color: blue ;'></h1>",unsafe_allow_html=True)
     st.markdown("hide_github_icon",unsafe_allow_html=True)
+    hide_github_icon = """
+    #GithubIcon {
+    visibility: hidden;
+    }"""
+    st.markdown(hide_github_icon, unsafe_allow_html=True)
     result =''
 
+    text_message = ''
     text_message = st.text_input('Enter your text message')
     if st.button('Predict'):
-        text = cv.transform([text_message])
-        prediction = model.predict(text)
-        if prediction[0] == 1:
-            result = 'Spam'
+        if text_message =='':
+            st.write("Please Enter any text")
         else:
-            result = 'Not Spam'
+            text = cv.transform([text_message])
+            prediction = model.predict(text)
+            if prediction[0] == 1:
+                result = 'Spam'
+            else:
+                result = 'Not Spam'
 
-        st.success('Prediction : {}'.format(result))
-        # st.write(st.__version__) # give current version of pkg that is being used
-        # st.write(jb.__version__)
+            st.success('Prediction : {}'.format(result))
+            # st.write(st.__version__) # give current version of pkg that is being used
+            # st.write(jb.__version__)
 
 
 
