@@ -5,7 +5,7 @@ def main(model,cv):
     st.markdown("<h1 style = 'text-align : center; font-size: 25px; color: blue ;'></h1>",unsafe_allow_html=True)
     hide_github_icon = """
     <style>
-    #stToolbar {
+    #baseButton-header {
     visibility: hidden;
     }
     </style>"""
