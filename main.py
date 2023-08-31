@@ -3,9 +3,8 @@ import joblib as jb
 def main(model,cv):
     st.title('Spam Filter'.upper())
     st.markdown("<h1 style = 'text-align : center; font-size: 25px; color: blue ;'></h1>",unsafe_allow_html=True)
-    st.markdown("hide_github_icon",unsafe_allow_html=True)
     hide_github_icon = """
-    #GithubIcon {
+    GithubIcon {
     visibility: hidden;
     }"""
     st.markdown(hide_github_icon, unsafe_allow_html=True)
