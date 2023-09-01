@@ -5,8 +5,8 @@ def main(model,cv):
     st.markdown("<h1 style = 'text-align : center; font-size: 25px; color: blue ;'></h1>",unsafe_allow_html=True)
     hide_github_icon = """
     <style>
-    #baseButton-header {
-    visibility: hidden;
+    .css-ch5dnh{
+    display: none;
     }
     </style>"""
     st.markdown(hide_github_icon, unsafe_allow_html=True)
