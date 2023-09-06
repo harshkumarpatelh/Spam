@@ -23,7 +23,7 @@ def main(model,cv):
             if prediction[0] == 1:
                 result = 'Spam'
             else:
-                result = 'Not Spam'
+                result = 'Ham(Not Spam)'
 
             st.success('Prediction : {}'.format(result))
             # st.write(st.__version__) # give current version of pkg that is being used
