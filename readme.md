@@ -1,1 +1,1 @@
-#  Spam Filter : [<i class="fa-brands fa-readme"></i>](https://spam13byharsh.streamlit.app/)
+## Spam Filter : [@ icon-arrow-up-right-from-square](https://spam13byharsh.streamlit.app/)
